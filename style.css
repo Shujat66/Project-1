@@ -1,0 +1,176 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(./Gilroy-Regular.ttf);
+}
+* {
+margin: 0;
+padding:0;
+box-sizing:border-box;
+font-family:'Gilroy';
+}
+
+html,body {
+height:100%;
+width:100%;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 5vw;
+    gap: 2vw;
+}
+nav h3{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+nav i{
+    font-size: 1.5vw;
+    background-color: black;
+    color: white;
+    padding: 0.7vw 0.7vw;
+    border-radius: 50%;
+}
+#center{
+    width: 100%;
+    /* background-color: crimson; */
+    padding: 0.2vw 4vw;
+}
+#center h1{
+    font-size: 5vw;
+    line-height: 5vw;
+    font-weight: 600;
+}
+#center-in{
+    width: 100%;
+    height: 200px;
+    /* background-color: crimson; */
+    padding-top: 4vw;
+    display: flex;
+    justify-content: space-between;
+}
+#center-in h3{
+    font-size: 1.6vw;
+    line-height: 3vw;
+}
+#shop{
+    width: 20%;
+}
+.elem{
+    /* background-color: yellow; */
+    /* margin: 5px; */
+    padding: 1.3vw 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid black;
+}
+.elem a{
+    text-decoration: none;
+    font-size: 1.4vw;
+    color: black;
+    font-weight: 600;
+}
+.elem i{
+    font-size: 1.5vw;
+    opacity: 0;
+}
+.elem:hover i{
+    opacity: 1;
+}
+/* .elem:hover {
+    background-color: rgb(205, 197, 197);
+} */
+#bottom{
+    width: 100%;
+    height: 300px;
+    background: url(./jd-mason-UKSoi-H2n_k-unsplash.jpg);
+    background-size: cover;
+    background-position: 0 21%;
+    
+}
+
+@media (max-width:600px) {
+    nav{
+        width: 100%;
+        height: 55px;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 5vw;
+        gap: 3vw;
+    }
+    nav h3{
+        font-size: 3.5vw;
+        font-weight: 600;
+    }
+    nav i{
+        font-size: 3vw;
+        background-color: black;
+        color: white;
+        padding: 2vw;
+        border-radius: 50%;
+    }
+    #center{
+        width: 100%;
+        /* background-color: crimson; */
+        padding: 0.2vw 4.5vw;
+    }
+    #center h1{
+        font-size: 10vw;
+        line-height: 12vw;
+        font-weight: 600;
+    }
+    #center-in{
+        width: 100%;
+        height: 160px;
+        /* background-color: crimson; */
+        padding-top: 3vw;
+        display: flex;
+        justify-content: flex-start;
+        /* border: 1px solid black; */
+        flex-direction: column;
+    }
+    #center-in h3{
+        font-size: 3vw;
+        line-height: 5vw;
+    }
+    #shop{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .elem{
+        /* background-color: yellow; */
+        /* margin-top: 5px; */
+        padding: 3vw 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid black;
+    }
+    .elem a{
+        text-decoration: none;
+        font-size: 3.5vw;
+        color: black;
+        font-weight: 600;
+    }
+    .elem i{
+        font-size: 3.5vw;
+        opacity: 1;
+    }
+    .elem:hover i{
+        opacity: 1;
+    }
+    #bottom{
+        width: 100%;
+        height: 120px;
+        background: url(./jd-mason-UKSoi-H2n_k-unsplash.jpg);
+        background-size: cover;
+        background-position: 0 21%;
+        margin-top: 0.3vw;
+    }
+}
